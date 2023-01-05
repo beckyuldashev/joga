@@ -1,0 +1,1 @@
+# Joga - minimalist web site about mind and body
