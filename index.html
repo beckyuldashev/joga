@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,51 @@
   <!-- Main JS -->
   <script src="assets/js/main.js" defer></script>
 </head>
+
 <body>
-  
+  <section class="promo">
+    <!-- <img src="assets/img/hero.png" alt="" class="promo__bg"> -->
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="assets/icons/logo.svg" alt="logo" class="logo__img">
+
+        <span class="logo__text">
+          mind & body
+        </span>
+      </a>
+
+      <ul class="nav__list" id="primary-navigation" aria-expanded="false">
+        <li class="nav__item">
+          <a href="#" class="nav__link">our story</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">practice</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">classes</a>
+        </li>
+      </ul>
+
+
+      <svg class="hamburger-icon" width="44" height="18" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line class="line" y1="1" x2="44" y2="1" stroke="white" stroke-width="2" />
+        <line class="line" y1="9" x2="27" y2="9" stroke="white" stroke-width="2" />
+        <line class="line" y1="17" x2="11" y2="17" stroke="white" stroke-width="2" />
+      </svg>
+    </nav>
+
+    <div class="promo__selling">
+      <h2 class="promo__selling-title">Let your mind breathe.</h2>
+      <h1 class="promo__selling-subtitle">
+        Get unlimited access to yoga, pilates, and meditition classes that fit the way you feel.
+      </h1>
+
+      <div class="promo__cta-block ctas">
+        <button class="ctas__secondary">Explore classes</button>
+        <button class="ctas__main">Sign up today</button>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
