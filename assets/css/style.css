@@ -63,7 +63,8 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture {
+picture,
+video {
   max-width: 100%;
   display: block;
 }
@@ -96,7 +97,6 @@ select {
 
 
 body {
-  background-color: rgb(66, 66, 66);
   font-family: var(--body-font);
 }
 
@@ -108,6 +108,18 @@ button {
   font-family: sans-serif;
   border-radius: .5rem;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.226);
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+}
+
+h1,
+h3 {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  line-height: 1.25;
 }
 
 .logo {
@@ -164,19 +176,8 @@ button {
   text-align: center;
 }
 
-.promo__selling > * + * {
+.promo__selling>*+* {
   margin-top: 1rem;
-}
-
-.promo__selling-title {
-  font-size: 2.5rem;
-  line-height: 1.25;
-}
-
-.promo__selling-subtitle {
-  font-size: 1.25rem;
-  font-family: sans-serif;
-  line-height: 1.25;
 }
 
 .promo__cta-block {
@@ -194,4 +195,43 @@ button {
 .ctas__main {
   background-color: var(--clr-secondary);
   color: #fff;
+}
+
+/* ========= classes section ========== */
+
+.classes {
+  font-family: var(--body-font);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.classes__description>*+* {
+  margin-top: .5rem;
+}
+
+.classes>*+* {
+  margin-top: 2rem;
+}
+
+.classes__videos>*+* {
+  margin-top: 1rem;
+}
+
+.videos__content {
+  position: relative;
+}
+
+.videos__content h3 {
+  position: absolute;
+  color: var(--clr-main);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.39);
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+.videos video {
+  border-radius: 1rem;
+  width: 100%;
 }
