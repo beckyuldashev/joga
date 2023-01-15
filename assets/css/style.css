@@ -130,6 +130,10 @@ h3 {
   line-height: 1.25;
 }
 
+.section {
+  padding: 1rem;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -179,7 +183,6 @@ h3 {
 
 .promo {
   min-height: 100vh;
-  padding: 1rem;
   color: #fff;
 
   background-image: url('../img/hero.png');
@@ -230,7 +233,6 @@ h3 {
 .classes {
   font-family: var(--title-font);
   text-align: center;
-  padding: 2rem 1rem;
 }
 
 .classes__description>*+* {
@@ -266,11 +268,6 @@ h3 {
 
 
 /* About section */
-
-.about {
-  padding: 1rem;
-}
-
 .about>*+* {
   margin-top: 2rem;
 }
@@ -291,4 +288,35 @@ h3 {
 /* Active classes */
 .show {
   transform: translate(0);
+}
+
+
+/* For medium and large devices */
+@media screen and (min-width: 48em) {
+  .section {
+    padding: 3rem;
+  }
+
+  .videos {
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  .classes__videos>*+* {
+    margin-top: 0;
+  }
+
+  .videos__content h3 {
+    bottom: 1rem;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  .about img {
+    width: 50%;
+  }
 }

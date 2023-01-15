@@ -24,11 +24,12 @@
 
   <!-- Main JS -->
   <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/video.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
-  <section class="promo">
+  <section class="promo section">
     <!-- <img src="assets/img/hero.png" alt="" class="promo__bg"> -->
     <nav class="nav">
       <a href="index.html" class="logo">
@@ -41,13 +42,13 @@
 
       <ul class="nav__list" id="primary-navigation" aria-expanded="false" role="list">
         <li class="nav__item">
-          <a href="#" class="nav__link">our story</a>
+          <a href="#story" class="nav__link">our story</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">practice</a>
+          <a href="#practice" class="nav__link">practice</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">classes</a>
+          <a href="#classes" class="nav__link">classes</a>
         </li>
       </ul>
 
@@ -73,7 +74,7 @@
     </div>
   </section>
 
-  <section class="classes">
+  <section class="classes section" id="classes">
     <div class="classes__description">
       <h2>Class tailred for you</h3>
         <h3>It's time to heal your mind and body</h3>
@@ -82,21 +83,21 @@
     <div class="classes__videos videos">
       <div class="videos__content videos__pilates">
         <h3>Pilates</h3>
-        <video src="assets/videos/pilates.mp4"></video>
+        <video muted loop class="video" src="assets/videos/pilates.mp4"></video>
       </div>
       <div class="videos__content videos__yoga">
         <h3>Yoga</h3>
-        <video src="assets/videos/yoga.mp4"></video>
+        <video muted loop class="video" src="assets/videos/yoga.mp4"></video>
       </div>
       <div class="videos__content videos__meditation">
         <h3>Meditation</h3>
-        <video src="assets/videos/meditation.mp4"></video>
+        <video muted loop class="video" src="assets/videos/meditation.mp4"></video>
       </div>
     </div>
   </section>
 
 
-  <section class="about">
+  <section class="about section" id="story">
     <div class="about__story">
       <h2>Our story...</h2>
       <p>

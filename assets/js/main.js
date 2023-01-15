@@ -1,5 +1,13 @@
-const hamburgerBtn = document.querySelector('.hamburger-icon');
+(() => {
+  const hamburgerBtn = document.querySelector('.hamburger-icon');
+  const videos = gsap.utils.toArray('.video');
 
-hamburgerBtn.addEventListener('click', () => {
-  showAndHideMenu(hamburgerBtn);
-});
+  // Menu
+  hamburgerBtn.addEventListener('click', () => {
+    showAndHideMenu(hamburgerBtn);
+  });
+
+
+  // Videos
+  showVideos(videos);
+})();
