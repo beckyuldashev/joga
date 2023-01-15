@@ -1,3 +1,6 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 /* Font family rules */
 @font-face {
   font-family: 'Stone Orgonite';
@@ -13,7 +16,9 @@
   --clr-main: #f8b281;
   --clr-secondary: #1b1b1b;
 
-  --body-font: 'Stone Orgonite', sans-serif;
+  --title-font: 'Stone Orgonite', sans-serif;
+  --body-font: 'Poppins', sans-serif;
+  ;
 }
 
 /* Box sizing rules */
@@ -98,6 +103,7 @@ select {
 
 body {
   font-family: var(--body-font);
+  color: var(--clr-secondary);
 }
 
 
@@ -110,15 +116,16 @@ button {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.226);
 }
 
+
 h2 {
   font-size: 2.5rem;
   line-height: 1.25;
+  font-family: var(--title-font);
 }
 
 h1,
 h3 {
   font-size: 1.25rem;
-  font-family: sans-serif;
   line-height: 1.25;
 }
 
@@ -200,7 +207,7 @@ h3 {
 /* ========= classes section ========== */
 
 .classes {
-  font-family: var(--body-font);
+  font-family: var(--title-font);
   text-align: center;
   padding: 2rem 1rem;
 }
@@ -234,4 +241,28 @@ h3 {
 .videos video {
   border-radius: 1rem;
   width: 100%;
+}
+
+
+/* About section */
+
+.about {
+  padding: 1rem;
+}
+
+.about>*+* {
+  margin-top: 2rem;
+}
+
+.about__story>*+* {
+  margin-top: 1rem;
+}
+
+.about__story h2 {
+  text-align: center;
+}
+
+.about__story p {
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
